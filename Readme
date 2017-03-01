@@ -1,1 +1,2 @@
-# MyRepository
+Simple application for getting live weather data developed as a student project at the University of Borås in 2016.
+The application is developed using AngularJS and OpenWeatherMap API https://openweathermap.org/.
