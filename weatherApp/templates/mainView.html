@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="jumbotron text-center" style="background-color:#262626" ng-controller="mainCtrl">
+	  <h1 style="color:#ffffff">Weather app</h1>
+	</div>
+	<div class="container">
+	  <div class="center-block">
+		<input type="text" ng-model="q" ng-keyup="searchData()"></input> <!-- Store user input in q and run searchData() on keyup -->
+		<table class="table table-striped">
+		  <thead>
+			<tr>
+			  <th>City</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr ng-repeat="cityName in data.list | filter:{name:q}">
+			<td><a ng-href="#/{{ cityName.id }}"/>{{ cityName.name }}</td> <!-- Route between views using id -->
+			</tr>
+		  </tbody>
+		</table>
+	  </div>
+	</div>
+</div>
