@@ -4,7 +4,7 @@ app.controller('mainCtrl', ["$scope", "$http", function($scope, $http) {
     $scope.q ="";
     $scope.searchData = function() {
       var url="http://api.openweathermap.org/data/2.5/find?q="+$scope.q+"&type=like";
-      var id = "&appid=YOUR API KEY";
+      var id = "&appid=YOUR API KEY"; //YOUR API KEY GOES HERE
       var callBack = "&callback=JSON_CALLBACK";
       var apiCall = url + id + callBack; //Concatenates url
       if($scope.q.length >= 3) {  //If user input greater than 3, send API call
