@@ -1,7 +1,7 @@
 //Controller for the weather details page
 app.controller("detailsCtrl", ["$scope", "$routeParams", "$http", "DateService", function($scope, $routeParams, $http, DateService, getLocal, degToCard) {
     var url="http://api.openweathermap.org/data/2.5/weather?id=" + $routeParams.id; //Add city id to url
-    var id = "&appid=YOUR API KEY";
+    var id = "&appid=YOUR API KEY"; //YOUR API KEY GOES HERE
     var callBack = "&callback=JSON_CALLBACK";
     var apiCall = url + id + callBack;
     var promise = $http.jsonp(apiCall); //Concatenates the url and sends API call
