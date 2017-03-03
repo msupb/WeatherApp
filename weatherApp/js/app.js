@@ -12,5 +12,5 @@ app.config(["$routeProvider", function($routeProvider) {
     }).
     otherwise({redirectTo: "/"
     });
-//Routar mellan vyerna och bestämmer vilken controllers som används, redirectar till start om fel uppstår
+//Route between views and set controller.
 }]);
